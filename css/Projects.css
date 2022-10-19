@@ -2,6 +2,7 @@
   display:-ms-flexbox;
   display:flex
 }
+
 .Projects__column{
   -ms-flex-preferred-size:33%;
   flex-basis:33%;
@@ -15,6 +16,7 @@
   flex-wrap:wrap;
   font-size:0
 }
+
 .Projects__item{
   transition:.8s opacity
 }
