@@ -1,1 +1,22 @@
-.Projects{display:-ms-flexbox;display:flex}.Projects__column{-ms-flex-preferred-size:33%;flex-basis:33%;display:-ms-flexbox;-ms-flex-direction:column;-ms-flex-wrap:wrap;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:wrap;flex-wrap:wrap;font-size:0}.Projects__item{transition:.8s opacity}
+.Projects{
+  display:-ms-flexbox;
+  display:flex
+}
+
+.Projects__column{
+  -ms-flex-preferred-size:33%;
+  flex-basis:33%;
+  display:-ms-flexbox;
+  -ms-flex-direction:column;
+  -ms-flex-wrap:wrap;
+  display:flex;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  font-size:0
+}
+
+.Projects__item{
+  transition:.8s opacity
+}
