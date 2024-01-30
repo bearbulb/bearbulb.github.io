@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", system-ui, sans-serif;
+}
+
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("/fonts/PermanentMarker-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --bg: #fff;
+  --text: #000;
+  --gray: #292b2c;
+}
+
+.dark {
+  --bg: #000;
+  --text: #fff;
+  --gray: #c2c5c6;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+#dark-mode-toggle:hover {
+  cursor: pointer;
+}
+
+.sunset,
+.sunrise {
+  width: 30px;
+  height: 30px;
+  fill: var(--gray);
+}
+
+.sunrise {
+  display: none;
+}
+
+.dark .sunrise {
+  display: block;
+}
+
+.sunset {
+  display: block;
+}
+
+.dark .sunset {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Permanent Marker", cursive;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=global.css.map */
