@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectGrid from "../components/ProjectGrid.astro";
+import ProjectColumn from "../components/ProjectColumn.astro";
+import ProjectItem from "../components/ProjectItem.astro";
+---
+
+<Layout 
+  title="Lookbooks | Ban Deloviar"
+  desc="Check out Ban Deloviar's lookbooks."
+>
+  <ProjectGrid>
+    <ProjectColumn>
+      <ProjectItem href="/lookbooks/iiiiclothing" src="/imgs/lookbooks/iiiiclothing/1.webp" overlayText="iiiiclothing" />
+      <ProjectItem href="/lookbooks/kinfold" src="/imgs/lookbooks/kinfold/1.webp" overlayText="Kinfold" />
+    </ProjectColumn>
+
+    <ProjectColumn>
+      <ProjectItem href="/lookbooks/paperache" src="/imgs/lookbooks/paperache/1.webp" overlayText="Paperache | Ava Nguyen" />
+    </ProjectColumn>
+
+    <ProjectColumn>
+      <ProjectItem href="/lookbooks/beugey" src="/imgs/lookbooks/beugey/1.webp" overlayText="Beugey" />
+      <ProjectItem href="/lookbooks/mana_eqpt" src="/imgs/lookbooks/mana_eqpt/1.webp" overlayText="Mana EQPT" />
+    </ProjectColumn>
+
+  </ProjectGrid>
+</Layout>

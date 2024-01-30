@@ -1,0 +1,34 @@
+---
+import LookbookLayout from "../../layouts/LookbookLayout.astro";
+import ProjectList from "../../components/ProjectList.astro";
+import ProjectItem from "../../components/ProjectItem.astro";
+import Lightbox from "../../components/Lightbox.astro";
+import LinkToTop from "../../components/LinkToTop.astro";
+---
+<LookbookLayout 
+  title="Mana EQPT | Ban Deloviar"
+  lookbook="Mana EQPT"
+>
+  <h2>Mana EQPT</h2>
+  <ProjectList>
+    <ProjectItem href="#lightbox1" src="/imgs/lookbooks/mana_eqpt/1.webp" overlayText="" />
+    <ProjectItem href="#lightbox2" src="/imgs/lookbooks/mana_eqpt/2.webp" overlayText="" />
+    <ProjectItem href="#lightbox3" src="/imgs/lookbooks/mana_eqpt/3.webp" overlayText="" />
+    <ProjectItem href="#lightbox4" src="/imgs/lookbooks/mana_eqpt/4.webp" overlayText="" />
+    <ProjectItem href="#lightbox5" src="/imgs/lookbooks/mana_eqpt/5.webp" overlayText="" />
+    <ProjectItem href="#lightbox6" src="/imgs/lookbooks/mana_eqpt/6.webp" overlayText="" />
+    <ProjectItem href="#lightbox7" src="/imgs/lookbooks/mana_eqpt/7.webp" overlayText="" />
+  </ProjectList>
+
+  <LinkToTop />
+
+  <!-- Lightboxes -->
+  <Lightbox id="lightbox1" src="/imgs/lookbooks/mana_eqpt/1.webp" />
+  <Lightbox id="lightbox2" src="/imgs/lookbooks/mana_eqpt/2.webp" />
+  <Lightbox id="lightbox3" src="/imgs/lookbooks/mana_eqpt/3.webp" />
+  <Lightbox id="lightbox4" src="/imgs/lookbooks/mana_eqpt/4.webp" />
+  <Lightbox id="lightbox5" src="/imgs/lookbooks/mana_eqpt/5.webp" />
+  <Lightbox id="lightbox6" src="/imgs/lookbooks/mana_eqpt/6.webp" />
+  <Lightbox id="lightbox7" src="/imgs/lookbooks/mana_eqpt/7.webp" />
+
+</LookbookLayout>

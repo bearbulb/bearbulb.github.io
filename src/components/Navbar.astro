@@ -1,0 +1,109 @@
+---
+import DarkModeToggle from "./DarkModeToggle.astro";
+---
+<nav class="navbar navbar-expand-sm navbar-light py-3 my-3">
+  <a class="navbar-brand ml-2" href="/">Ban Deloviar</a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#navbarScroll" 
+    aria-controls="navbarScroll" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div 
+    class="collapse navbar-collapse justify-content-end text-center" 
+    id="navbarScroll"
+  >
+    <ul class="navbar-nav navbar-nav-scroll">
+
+      <li class="nav-item">
+        <a class="nav-link" href="/lookbooks">Lookbooks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/outside">Go Outside</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/portraits">Portraits</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/animated">Animated</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/japan">Japan</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+
+      <DarkModeToggle />
+    </ul>
+  </div>
+</nav>
+
+<style>
+
+  :root {
+    --bg: #fff;
+    --text: #000;
+    --gray: #292b2c;
+  }
+  .dark {
+    --bg: #000;
+    --text: #fff;
+    --gray: #c2c5c6;
+  }
+
+  .navbar {
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+    padding-inline: 3rem !important;
+  }
+
+  .navbar-brand {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    color: var(--text);
+  }
+
+  .navbar-toggler {
+    border: 0;
+  }
+
+  .nav-item {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+  }
+
+  .nav-link {
+    color: var(--gray);
+  }
+
+  .nav-link:hover {
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  .active {
+    color: var(--text) !important;
+    font-weight: 400;
+    text-decoration: underline dotted;
+    text-underline-offset: 5px;
+  }
+
+</style>
+
+<script>
+const page = window.location.pathname.substring(1);
+const links = document.querySelectorAll(".nav-link");
+
+for (let link of links) {
+  if (link.getAttribute("href").substring(1) == page) {
+    link.classList.toggle("active");
+  }
+}
+</script>

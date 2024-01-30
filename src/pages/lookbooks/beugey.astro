@@ -1,0 +1,37 @@
+---
+import LookbookLayout from "../../layouts/LookbookLayout.astro";
+import ProjectList from "../../components/ProjectList.astro";
+import ProjectItem from "../../components/ProjectItem.astro";
+import Lightbox from "../../components/Lightbox.astro";
+import LinkToTop from "../../components/LinkToTop.astro";
+---
+<LookbookLayout 
+  title="Beugey | Ban Deloviar"
+  lookbook="Beugey"
+>
+  <h2>Beugey</h2>
+  <a href="https://instagram.com/beugey_official/" class="lookbook-social">
+    https://instagram.com/beugey_official/
+  </a>
+  <ProjectList>
+    <ProjectItem href="#lightbox1" src="/imgs/lookbooks/beugey/1.webp" overlayText="" />
+    <ProjectItem href="#lightbox2" src="/imgs/lookbooks/beugey/2.webp" overlayText="" />
+    <ProjectItem href="#lightbox3" src="/imgs/lookbooks/beugey/3.webp" overlayText="" />
+    <ProjectItem href="#lightbox4" src="/imgs/lookbooks/beugey/4.webp" overlayText="" />
+  </ProjectList>
+
+  <LinkToTop />
+
+  <!-- Lightboxes -->
+  <Lightbox id="lightbox1" src="/imgs/lookbooks/beugey/1.webp" />
+  <Lightbox id="lightbox2" src="/imgs/lookbooks/beugey/2.webp" />
+  <Lightbox id="lightbox3" src="/imgs/lookbooks/beugey/3.webp" />
+  <Lightbox id="lightbox4" src="/imgs/lookbooks/beugey/4.webp" />
+
+</LookbookLayout>
+
+<style>
+  .lookbook-social {
+    font-size: 1.2rem;
+  }
+</style>

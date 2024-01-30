@@ -1,0 +1,39 @@
+---
+import LookbookLayout from "../../layouts/LookbookLayout.astro";
+import ProjectList from "../../components/ProjectList.astro";
+import ProjectItem from "../../components/ProjectItem.astro";
+import Lightbox from "../../components/Lightbox.astro";
+import LinkToTop from "../../components/LinkToTop.astro";
+---
+<LookbookLayout 
+  title="Paperache | Ban Deloviar"
+  lookbook="Paperache"
+>
+  <h2>PaperAche | Ava Nguyen</h2>
+  <a href="https://instagram.com/paper_ache/" class="lookbook-social">
+    https://instagram.com/paper_ache/
+  </a>
+  <ProjectList>
+    <ProjectItem href="#lightbox1" src="/imgs/lookbooks/paperache/1.webp" overlayText="" />
+    <ProjectItem href="#lightbox2" src="/imgs/lookbooks/paperache/2.webp" overlayText="" />
+    <ProjectItem href="#lightbox3" src="/imgs/lookbooks/paperache/3.webp" overlayText="" />
+    <ProjectItem href="#lightbox4" src="/imgs/lookbooks/paperache/4.webp" overlayText="" />
+    <ProjectItem href="#lightbox5" src="/imgs/lookbooks/paperache/5.webp" overlayText="" />
+  </ProjectList>
+
+  <LinkToTop />
+
+  <!-- Lightboxes -->
+  <Lightbox id="lightbox1" src="/imgs/lookbooks/paperache/1.webp" />
+  <Lightbox id="lightbox2" src="/imgs/lookbooks/paperache/2.webp" />
+  <Lightbox id="lightbox3" src="/imgs/lookbooks/paperache/3.webp" />
+  <Lightbox id="lightbox4" src="/imgs/lookbooks/paperache/4.webp" />
+  <Lightbox id="lightbox5" src="/imgs/lookbooks/paperache/5.webp" />
+
+</LookbookLayout>
+
+<style>
+  .lookbook-social {
+    font-size: 1.2rem;
+  }
+</style>

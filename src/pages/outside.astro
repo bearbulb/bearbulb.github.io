@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
+import ProjectColumn from '../components/ProjectColumn.astro';
+import ProjectItem from '../components/ProjectItem.astro';
+import Lightbox from '../components/Lightbox.astro';
+---
+
+<Layout 
+  title="Go Outside | Ban Deloviar"
+  desc="Check out Ban Deloviar's 'Go Outside' collection."
+>
+  <ProjectGrid>
+    <ProjectColumn> 
+      <ProjectItem href="#lightbox1" src="/imgs/outside/1.webp" overlayText="" />
+      <!--
+      <ProjectItem href="#lightbox2" src="/imgs/outside/2.webp" overlayText="" />
+      -->
+      <ProjectItem href="#lightbox3" src="/imgs/outside/3.webp" overlayText="" />
+      <ProjectItem href="#lightbox4" src="/imgs/outside/4.webp" overlayText="" />
+      <ProjectItem href="#lightbox5" src="/imgs/outside/5.webp" overlayText="" />
+      <ProjectItem href="#lightbox6" src="/imgs/outside/6.webp" overlayText="" />
+      <ProjectItem href="#lightbox18" src="/imgs/outside/18.webp" overlayText="" />
+    </ProjectColumn>
+
+    <ProjectColumn> 
+      <ProjectItem href="#lightbox7" src="/imgs/outside/7.webp" overlayText="" />
+      <ProjectItem href="#lightbox8" src="/imgs/outside/8.webp" overlayText="" />
+      <ProjectItem href="#lightbox9" src="/imgs/outside/9.webp" overlayText="" />
+      <ProjectItem href="#lightbox10" src="/imgs/outside/10.webp" overlayText="" />
+      <ProjectItem href="#lightbox11" src="/imgs/outside/11.webp" overlayText="" />
+    </ProjectColumn>
+
+    <ProjectColumn> 
+      <ProjectItem href="#lightbox12" src="/imgs/outside/12.webp" overlayText="" />
+      <ProjectItem href="#lightbox13" src="/imgs/outside/13.webp" overlayText="" />
+      <ProjectItem href="#lightbox14" src="/imgs/outside/14.webp" overlayText="" />
+      <ProjectItem href="#lightbox15" src="/imgs/outside/15.webp" overlayText="" />
+      <ProjectItem href="#lightbox16" src="/imgs/outside/16.webp" overlayText="" />
+      <ProjectItem href="#lightbox17" src="/imgs/outside/17.webp" overlayText="" />
+    </ProjectColumn>
+  </ProjectGrid>
+
+  <!-- Lightboxes -->
+  <Lightbox id="lightbox1" src="/imgs/outside/1.webp" />
+  <Lightbox id="lightbox2" src="/imgs/outside/2.webp" />
+  <Lightbox id="lightbox3" src="/imgs/outside/3.webp" />
+  <Lightbox id="lightbox4" src="/imgs/outside/4.webp" />
+  <Lightbox id="lightbox5" src="/imgs/outside/5.webp" />
+  <Lightbox id="lightbox6" src="/imgs/outside/6.webp" />
+
+  <Lightbox id="lightbox7" src="/imgs/outside/7.webp" />
+  <Lightbox id="lightbox8" src="/imgs/outside/8.webp" />
+  <Lightbox id="lightbox9" src="/imgs/outside/9.webp" />
+  <Lightbox id="lightbox10" src="/imgs/outside/10.webp" />
+  <Lightbox id="lightbox11" src="/imgs/outside/11.webp" />
+
+  <Lightbox id="lightbox12" src="/imgs/outside/12.webp" />
+  <Lightbox id="lightbox13" src="/imgs/outside/13.webp" />
+  <Lightbox id="lightbox14" src="/imgs/outside/14.webp" />
+  <Lightbox id="lightbox15" src="/imgs/outside/15.webp" />
+  <Lightbox id="lightbox16" src="/imgs/outside/16.webp" />
+  <Lightbox id="lightbox17" src="/imgs/outside/17.webp" />
+  <Lightbox id="lightbox18" src="/imgs/outside/18.webp" />
+
+</Layout>

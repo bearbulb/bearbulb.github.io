@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectList from "../components/ProjectList.astro";
+import ProjectItem from "../components/ProjectItem.astro";
+import Lightbox from "../components/Lightbox.astro";
+---
+
+<Layout 
+  title="Animated | Ban Deloviar"
+  desc="Check out Ban Deloviar's 'Animated' collection."
+>
+  <ProjectList>
+    <ProjectItem href="#lightbox1" src="/imgs/japan/1.gif" overlayText="" />
+    <ProjectItem href="#lightbox2" src="/imgs/gifs/1.gif" overlayText="" />
+    <ProjectItem href="#lightbox3" src="/imgs/japan/14.gif" overlayText="" />
+    <ProjectItem href="#lightbox4" src="/imgs/gifs/2.gif" overlayText="" />
+    <ProjectItem href="#lightbox5" src="/imgs/japan/11.gif" overlayText="" />
+    <ProjectItem href="#lightbox6" src="/imgs/gifs/3.gif" overlayText="" />
+    <ProjectItem href="#lightbox7" src="/imgs/japan/22.gif" overlayText="" />
+    <ProjectItem href="#lightbox8" src="/imgs/gifs/4.gif" overlayText="" />
+    <ProjectItem href="#lightbox9" src="/imgs/gifs/5.gif" overlayText="" />
+    <ProjectItem href="#lightbox10" src="/imgs/gifs/6.gif" overlayText="" />
+  </ProjectList>
+
+  <!-- Lightboxes -->
+  <Lightbox id="lightbox1" src="/imgs/japan/1.gif" />
+  <Lightbox id="lightbox2" src="/imgs/gifs/1.gif" />
+  <Lightbox id="lightbox3" src="/imgs/japan/14.gif" />
+  <Lightbox id="lightbox4" src="/imgs/gifs/2.gif" />
+  <Lightbox id="lightbox5" src="/imgs/japan/11.gif" />
+  <Lightbox id="lightbox6" src="/imgs/gifs/3.gif" />
+  <Lightbox id="lightbox7" src="/imgs/japan/22.gif" />
+  <Lightbox id="lightbox8" src="/imgs/gifs/4.gif" />
+  <Lightbox id="lightbox9" src="/imgs/gifs/5.gif" />
+  <Lightbox id="lightbox10" src="/imgs/gifs/6.gif" />
+
+  <div class="footer-links">
+    <a class="brand" href="/">Ban Deloviar</a>
+    <a class="top-link" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+      </svg>
+    </a>
+  </div>
+
+</Layout>
+
+<style>
+  :root{
+    --bg: #fff;
+    --text: #000;
+    --gray: #292b2c;
+  }
+
+  .dark {
+    --bg: #000;
+    --text: #fff;
+    --gray: #c2c5c6;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--text);
+    padding-block: 1rem;
+  }
+
+  .top-link svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--gray);
+    padding-bottom: 1rem;
+  }
+
+  .brand {
+    font-family: "Permanent Marker", cursive;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text);
+    padding-bottom: 0.5rem;
+  }
+</style>
