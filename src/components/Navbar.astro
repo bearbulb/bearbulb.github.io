@@ -102,7 +102,7 @@ const page = window.location.pathname.substring(1);
 const links = document.querySelectorAll(".nav-link");
 
 for (let link of links) {
-  if (link.getAttribute("href").substring(1) == page) {
+  if (link.getAttribute("href").substring(1) + "/" === page) {
     link.classList.toggle("active");
   }
 }
