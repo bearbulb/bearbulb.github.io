@@ -33,26 +33,26 @@ body {
   cursor: pointer;
 }
 
-.sunset,
-.sunrise {
+.light-off,
+.light-on {
   width: 30px;
   height: 30px;
   fill: var(--gray);
 }
 
-.sunrise {
+.light-on {
   display: none;
 }
 
-.dark .sunrise {
+.dark .light-on {
   display: block;
 }
 
-.sunset {
+.light-off {
   display: block;
 }
 
-.dark .sunset {
+.dark .light-off {
   display: none;
 }
 
