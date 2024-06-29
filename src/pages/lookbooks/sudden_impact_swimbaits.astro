@@ -1,0 +1,49 @@
+---
+import LookbookLayout from "../../layouts/LookbookLayout.astro";
+import ProjectList from "../../components/ProjectList.astro";
+import ProjectItem from "../../components/ProjectItem.astro";
+import Lightbox from "../../components/Lightbox.astro";
+import LinkToTop from "../../components/LinkToTop.astro";
+---
+<LookbookLayout 
+  title="Sudden Impact Swimbaits | Ban Deloviar"
+  lookbook="Sudden Impact Swimbaits"
+>
+  <h2>Sudden Impact Swimbaits</h2>
+  <a href="https://instagram.com/sudden_impact_swimbaits/" class="lookbook-social">
+    https://instagram.com/sudden_impact_swimbaits/
+  </a>
+  <ProjectList>
+    <ProjectItem href="#lightbox1" src="/imgs/lookbooks/sudden_impact_swimbaits/PunchCraw-9.webp" overlayText="" />
+    <ProjectItem href="#lightbox2" src="/imgs/lookbooks/sudden_impact_swimbaits/PunchCraw-13.webp" overlayText="" />
+    <ProjectItem href="#lightbox3" src="/imgs/lookbooks/sudden_impact_swimbaits/Untitled-1.webp" overlayText="" />
+    <ProjectItem href="#lightbox4" src="/imgs/lookbooks/sudden_impact_swimbaits/Untitled-2.webp" overlayText="" />
+    <ProjectItem href="#lightbox5" src="/imgs/lookbooks/sudden_impact_swimbaits/ClassicBluntNoseSwimbait-8.webp" overlayText="" />
+    <ProjectItem href="#lightbox6" src="/imgs/lookbooks/sudden_impact_swimbaits/ClassicBluntNoseSwimbait-9.webp" overlayText="" />
+    <ProjectItem href="#lightbox7" src="/imgs/lookbooks/sudden_impact_swimbaits/ClassicBluntNoseSwimbait-11.webp" overlayText="" />
+    <ProjectItem href="#lightbox8" src="/imgs/lookbooks/sudden_impact_swimbaits/ClassicBluntNoseSwimbait-17.webp" overlayText="" />
+    <ProjectItem href="#lightbox9" src="/imgs/lookbooks/sudden_impact_swimbaits/SugarShakerTrout-1.webp" overlayText="" />
+    <ProjectItem href="#lightbox10" src="/imgs/lookbooks/sudden_impact_swimbaits/SugarShakerTrout-2.webp" overlayText="" />
+  </ProjectList>
+
+  <LinkToTop />
+
+  <!-- Lightboxes -->
+  <Lightbox id="lightbox1" src="/imgs/lookbooks/sudden_impact_swimbaits/PunchCraw-9.webp" />
+  <Lightbox id="lightbox2" src="/imgs/lookbooks/sudden_impact_swimbaits/PunchCraw-13.webp" />
+  <Lightbox id="lightbox3" src="/imgs/lookbooks/sudden_impact_swimbaits/Untitled-1.webp" />
+  <Lightbox id="lightbox4" src="/imgs/lookbooks/sudden_impact_swimbaits/Untitled-2.webp" />
+  <Lightbox id="lightbox5" src="/imgs/lookbooks/sudden_impact_swimbaits/ClassicBluntNoseSwimbait-8.webp" />
+  <Lightbox id="lightbox6" src="/imgs/lookbooks/sudden_impact_swimbaits/ClassicBluntNoseSwimbait-9.webp" />
+  <Lightbox id="lightbox7" src="/imgs/lookbooks/sudden_impact_swimbaits/ClassicBluntNoseSwimbait-11.webp" />
+  <Lightbox id="lightbox8" src="/imgs/lookbooks/sudden_impact_swimbaits/ClassicBluntNoseSwimbait-17.webp" />
+  <Lightbox id="lightbox9" src="/imgs/lookbooks/sudden_impact_swimbaits/SugarShakerTrout-1.webp" />
+  <Lightbox id="lightbox10" src="/imgs/lookbooks/sudden_impact_swimbaits/SugarShakerTrout-2.webp" />
+
+</LookbookLayout>
+
+<style>
+  .lookbook-social {
+    font-size: 1.2rem;
+  }
+</style>
